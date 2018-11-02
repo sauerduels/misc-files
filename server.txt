@@ -1,0 +1,56 @@
+1) Deploy Server
+Debian 9 x64 / 4 vCPU
+
+2) Log into server
+ssh root@ip
+
+3) Update server
+apt update
+apt upgrade
+apt autoremove
+
+4) Install dependencies
+apt install git build-essential htop
+
+5) Clone sauer server repository
+git clone https://github.com/sauerduels/sauer-server.git
+
+6) Compile sauer server
+cd sauer-server/src/
+make
+
+7) Start server
+cd ..
+./start_server.sh
+
+8) Log into proxy server
+ssh frosty@sauerduels.me
+
+9) Update proxy server
+sudo apt update
+sudo apt upgrade
+sudo apt autoremove
+
+10) Start proxy server
+screen
+cd sauer-proxy/target/release
+./sauer-proxy -p 10000 -r 10000 -d 5000 -m -f IP > log1.txt &
+./sauer-proxy -p 20000 -r 20000 -d 5000 -m -f IP > log2.txt &
+./sauer-proxy -p 30000 -r 30000 -d 5000 -m -f IP > log3.txt &
+./sauer-proxy -p 40000 -r 40000 -d 5000 -m -f IP > log4.txt &
+Press Ctrl+a+d
+
+11) Compress server
+rm -rf .git
+cd ..
+tar -cvzf server.tar.gz sauer-server/
+
+12) Download server
+sftp root@ip
+get server.tar.gz
+
+13) Stop proxy
+htop
+kill jobID
+
+14) Destroy server

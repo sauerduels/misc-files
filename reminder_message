@@ -1,0 +1,25 @@
+@everyone 
+
+**IMPORTANT**
+
+Just a reminder for you all to please be on discord during the event for details like game times, etc.
+
+The event will last about 3 hours, please do not show up for one or two games and leave, that messes with our tournament system.
+
+Please don't leave your match before the intermission ends, as that will mess with our stats/screenshots system.
+
+And please show up 10 minutes before the event begins, so I can keep track of who is there. If you don't arrive before the start time, it will be too late. DO NOT CONNECT FROM THE SERVER LIST, USE THE /connect COMMAND INSTEAD OR YOU WILL LAG. This is to protect our servers from ddosers during gameplay. 
+
+DO NOT give out the IP for any reason whatsoever, there is no reason to because spectators can still watch the matches, the IP is for players only. If someone leaks the IP it will put us at risk a higher risk of DDoS, and we may decide to suspend you from playing in future tournaments depending on the circumstances.
+
+**SERVERS**
+
+For a quick-connect menu, paste the following command into your console: ```/sd = [newgui sdgui [loop i 4 [guibutton (concatword "Server #" (+ $i 1)) [connect xx.xx.xx.xx @(concatword (+ $i 1) "0000")]]]; showgui sdgui]```
+Then do `/sd` to open the menu, note that you will need to re-enter this command for every new event.
+
+Command-line cmd: 
+
+SauerDuels #1: `/connect xx.xx.xx.xx 10000`
+SauerDuels #2: `/connect xx.xx.xx.xx 20000`
+SauerDuels #3 `/connect xx.xx.xx.xx 30000`
+SauerDuels #4: `/connect xx.xx.xx.xx 40000`
