@@ -1,7 +1,7 @@
-@everyone 
+@everyone .
 
 **IMPORTANT**
-All events will last about 2-3 hours, please be on discord during the event for details like game times, and do not disconnect from a game before intermission.
+All events will start at 6:00 PM (CEST) and last about 2-3 hours, please be on discord during the event for details like game times, and do not disconnect from a game before intermission.
 
 DO NOT give out the IP for any reason whatsoever, the IP is for players only. If someone leaks the IP it will put us at risk a higher risk of DDoS, and we may decide to ban you from playing in future tournaments depending on the circumstances.
 
@@ -9,8 +9,11 @@ DO NOT give out the IP for any reason whatsoever, the IP is for players only. If
 **SERVERS**
 For a quick-connect menu, paste the following command into your console:
 
-```/sd = [newgui sdgui [loop i 4 [guibutton (concatword "Server #" (+ $i 1)) [connect xx.xx.xx.xx @(concatword (+ $i 1) "0000")]]]; showgui sdgui]```
+```/sd = [newgui sdgui [loop i 5 [guibutton (concatword "Server #" (+ $i 1)) [connect xx.xx.xx.xx @(concatword (+ $i 1) "0000")]]]; showgui sdgui]```
 
 Then do `/sd` to open the menu, note that you will need to re-enter this command for every new tournament.
 
-Command-line cmd: `/connect xx.xx.xx.xx 10000|20000|30000|40000`
+Command-line cmd: `/connect xx.xx.xx.xx 10000|20000|30000|40000|50000`
+
+**BRACKET**
+https://sauerduels.challonge.com/sd32ffa

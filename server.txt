@@ -38,6 +38,7 @@ cd sauer-proxy/target/release
 ./sauer-proxy -p 20000 -r 20000 -d 5000 -m -f IP > log2.txt &
 ./sauer-proxy -p 30000 -r 30000 -d 5000 -m -f IP > log3.txt &
 ./sauer-proxy -p 40000 -r 40000 -d 5000 -m -f IP > log4.txt &
+./sauer-proxy -p 50000 -r 50000 -d 5000 -m -f IP > log5.txt &
 Press Ctrl+a+d
 
 11) Compress server
