@@ -6,7 +6,7 @@ ssh root@serverhost
 apt update && apt upgrade && apt autoremove && apt install git build-essential htop && git clone https://github.com/sauerduels/sauer-server.git && cd sauer-server/src/ && make && cd ..
 
 3) Start remod
-./start_server.sh
+./start_sd.sh or ./start_sctf.sh
 
 4) Deploy/ssh into proxies
 Debian 9 x64 / 4 vCPU - EU and NA
